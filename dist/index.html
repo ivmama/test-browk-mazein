@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="main">
+      <form id="hello" class="hello" action="#" method="post">
+        <div class="hello__wrapper-top">
+          <h2 class="hello__title">Profile</h2>
+          <div class="hello__enter-buttons">
+            <a
+              href="#registration"
+              class="hello__enter-button hello__registration-button"
+              >Registration</a
+            >
+            <a
+              href="#autorization"
+              class="hello__enter-button hello__autorization-button"
+              >Sign in</a
+            >
+          </div>
+        </div>
+
+        <div class="hello__social">
+          <p class="hello__social-text">You can sign in with social</p>
+          <div class="hello__social-links">
+            <a href="#" class="hello__social-link"
+              ><img src="images/vk.svg" alt="vk"
+            /></a>
+            <a href="#" class="hello__social-link"
+              ><img src="images/facebook.svg" alt="facebook"
+            /></a>
+            <a href="#" class="hello__social-link"
+              ><img src="images/google.svg" alt="google"
+            /></a>
+          </div>
+        </div>
+
+        <div class="hello__wrapper-bottom">
+          <div class="hello__forms">
+            <div class="hello__form-registration hello__form" id="registration">
+              <div class="hello__form-group">
+                <input
+                  class="hello__form-group--input"
+                  type="text"
+                  name="username"
+                  placeholder=" "
+                  id="username"
+                  required=" "
+                  tabindex="1"
+                />
+                <label class="hello__form-group--label" for="username"
+                  >Your name</label
+                >
+              </div>
+              <div class="hello__form-group">
+                <input
+                  class="hello__form-group--input"
+                  type="email"
+                  name="email"
+                  placeholder=" "
+                  id="email"
+                  required
+                  value=" "
+                  tabindex="2"
+                />
+                <label class="hello__form-group--label" for="email"
+                  >E-mail</label
+                >
+              </div>
+
+              <div class="hello__form-group">
+                <input
+                  class="hello__form-group--input"
+                  type="tel"
+                  name="phone"
+                  placeholder=" "
+                  id="phone"
+                  required
+                  tabindex="3"
+                />
+                <label class="hello__form-group--label" for="phone"
+                  >Phone</label
+                >
+              </div>
+
+              <input
+                class="hello__form-accord--box"
+                type="checkbox"
+                name="accord"
+                value="yes"
+                id="accord"
+                tabindex="4"
+              />
+              <label class="hello__form-accord" for="accord">
+                <span class="check-style"></span>
+                I accept the terms of the offer of
+                <a href="./page2.html">the privacy policy</a>
+              </label>
+
+              <button
+                class="btn primary-btn hello__form-btn-submit"
+                type="submit"
+                tabindex="5"
+              >
+                Registration
+              </button>
+              <a href="#" class="btn flat-btn hello__form-btn-autorization"
+                >Sign in</a
+              >
+            </div>
+
+            <div class="hello__form-autorization hello__form" id="autorization">
+              <div class="hello__form-group">
+                <input
+                  class="hello__form-group--input"
+                  type="text"
+                  name="username"
+                  placeholder=" "
+                  id="username"
+                  required
+                  tabindex="1"
+                />
+                <label class="hello__form-group--label" for="username"
+                  >Your name</label
+                >
+              </div>
+              <div class="hello__form-group">
+                <input
+                  class="hello__form-group--input"
+                  type="email"
+                  name="email"
+                  placeholder=" "
+                  id="email"
+                  required
+                  value=" "
+                  tabindex="2"
+                />
+
+                <label class="hello__form-group--label" for="email"
+                  >E-mail</label
+                >
+              </div>
+              <button
+                class="btn primary-btn hello__form-btn-submit"
+                type="submit"
+                tabindex="3"
+              >
+                Autorization
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
